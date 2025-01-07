@@ -21,16 +21,27 @@ ul li a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
-ul li a:hover {
-    color: #555;
+.row ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #e6effc, #e7fbff, #8d8d8d);
+    transition: width 0.3s ease-in-out;
+}
+
+.row ul li a:hover::after {
+    width: 50%;
 }
 
 .footer {
     margin-top: 80px;
-    background-image: linear-gradient(to right, #c0c0dd, #8d5361, #ab9974, #d2b99c);
-    color: #333;
+    color: #fff;
+    background: linear-gradient(90deg, #4B0082, #FF4500);
     padding: 40px 20px;
     width: 100%;
 }
@@ -60,6 +71,7 @@ ul li a:hover {
 .about-company {
     font-size: 14px;
     margin-top: 10px;
+    color: #fff;
 }
 
 .about-company p{
@@ -85,10 +97,14 @@ ul li a:hover {
 .row h3 {
     margin-bottom: 10px;
     font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .foot-line {
     margin-top: 50px;
     text-align: center;
     font-size: 15px;
+    color: #fff;
 }
